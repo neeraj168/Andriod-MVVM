@@ -7,7 +7,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.mvvm.Event
+import com.example.mvvm.utilities.Event
 import com.example.mvvm.db.entity.Subscriber
 import com.example.mvvm.repository.SubscriberRepository
 import kotlinx.coroutines.launch

@@ -1,5 +1,6 @@
 package com.example.mvvm.repository
 
+import android.app.Activity
 import com.example.mvvm.db.dao.SubscriberDAO
 import com.example.mvvm.db.entity.Subscriber
 
@@ -8,7 +9,7 @@ import com.example.mvvm.db.entity.Subscriber
  * @author:  Jignesh N Patel
  * @date: 15-May-2021 3:32 PM
  */
-class SubscriberRepository(private val subDAO: SubscriberDAO) {
+class SubscriberRepository( private val subDAO: SubscriberDAO) {
 
     val subscribers = subDAO.getAllSubscribers()
 

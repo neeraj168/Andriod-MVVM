@@ -16,7 +16,7 @@ import com.example.mvvm.db.entity.Subscriber
 class SubscribersAdapter(private val clickListener: (Subscriber) -> Unit) : RecyclerView.Adapter<SubscribersAdapter.SubscriberViewHolder>() {
 
 
-    private lateinit var subscribers: ArrayList<Subscriber>
+    private  var subscribers: ArrayList<Subscriber> = ArrayList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SubscriberViewHolder {
         val inflater = LayoutInflater.from(parent.context)
